@@ -1,0 +1,50 @@
+html {
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flexbox;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.image{
+    padding-bottom: 0%;
+}
+
+.caption{
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    color: darkgray;
+    padding-top: 0%;
+}
+
+.heading{
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    color: darkgray;
+}
+
+.sub-heading{
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    color: darkgray;
+}
+
+#txt{
+    color:darkgrey;
+    font-size:3rem;
+}
+
+h5{
+
+}
