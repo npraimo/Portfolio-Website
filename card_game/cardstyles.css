@@ -1,0 +1,22 @@
+html {
+  background-color: black;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: auto;
+  justify-content: center;
+}
+
+img {
+  height: 145px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  color: antiquewhite;
+}
