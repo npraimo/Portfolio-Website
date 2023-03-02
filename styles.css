@@ -98,11 +98,7 @@ fieldset {
   border: 0;
 }
 
-#linkedInLogo {
-  width: 11.5%;
-  height: 11.5%;
-}
-#emailLogo {
-  width: 11.5%;
-  height: 5%;
+.logo {
+  width: 20%;
+  height: 20%;
 }
