@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nolan Raimo Projects</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body onload="startTime()">
+    <h1>Projects</h1>
+    <div id="txt"></div>
+    <div class="sub-heading">
+      <br />
+      <a href="trackconversion.html">Track Conversion Calculator</a>
+      <br />
+      <br />
+      <a href="card_game/card.html">Memory game</a>
+    </div>
+
+    <script>
+      function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+      }
+
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        } // add zero in front of numbers < 10
+        return i;
+      }
+    </script>
+  </body>
+</html>

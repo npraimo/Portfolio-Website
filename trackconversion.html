@@ -5,6 +5,7 @@
     <title>Nolan Raimo Portfolio</title>
     <link href="styles.css" rel="stylesheet" />
   </head>
+  <body>
     <h2 class="sub-heading">Track and Field Conversion</h2>
 
     <label for="track-event">
@@ -21,18 +22,18 @@
     <br />
 
     <form>
-    <label for="track-time">
-      <textarea
-        id="track-time"
-        placeholder="What time would you like to convert?"
-        type="number"
-      ></textarea>
-        <br>
-        <input type="submit"  />
-    </label>
+      <label for="track-time">
+        <textarea
+          id="track-time"
+          placeholder="What time would you like to convert?"
+          type="number"
+        ></textarea>
+        <br />
+        <input type="submit" />
+      </label>
     </form>
 
-    <div name = "result">
+    <div name="result">
       <p></p>
     </div>
   </body>
@@ -40,8 +41,8 @@
     const timeToConvert = document.getElementById("form");
     timeToConvert.addEventListener("change", convertTime);
 
-    function convertTime(){
-      console.log('please god work');
+    function convertTime() {
+      console.log("please god work");
     }
   </script>
 </html>

@@ -17,6 +17,9 @@ body {
 
 nav {
   display: block;
+  flex: auto;
+  font-size: 2.5rem;
+  padding: 1.5rem;
 }
 
 h1 {
@@ -55,23 +58,16 @@ h5 {
   align-items: center;
   display: flexbox;
   color: darkgray;
-}
-
-.list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 2rem;
 }
 
 #txt {
-  color: darkgrey;
+  color: lightcyan;
   font-size: 3rem;
-}
-
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 1rem 0 0;
 }
 
 a:visited {
@@ -100,4 +96,13 @@ textarea,
 
 fieldset {
   border: 0;
+}
+
+#linkedInLogo {
+  width: 11.5%;
+  height: 11.5%;
+}
+#emailLogo {
+  width: 11.5%;
+  height: 5%;
 }

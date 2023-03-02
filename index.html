@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Nolan Raimo Portfolio</title>
-    <link href="styles.css" rel="stylesheet" />   
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
-  <body onload ="startTime()">
-    <div class = 'nav-bar'>
+  <body>
+    <div class="nav-bar">
       <nav>
-        <a href="card_game/card.html">Memory Game</a>
+        <a href="contactInfo.html">Contact Info</a>
+        <a href="projects.html">Projects</a>
       </nav>
     </div>
-    <div class = "heading"> 
-      <h1><u><b>Nolan Raimo's HTML, CSS, and Javascript Portfolio</u></b></h1>
+    <div class="heading">
+      <h1><b>Nolan Raimo's Portfolio</b></h1>
     </div>
     <div class="card">
-      <img class="image" src="https://apellawealth.com/hubfs/Nolan%20website.png" alt="Nolan website" loading="lazy" style="width:300px;">
-    <div class= "container"><h5><i>My previous employer still hasn't removed my image and info from their website;</i>
-      <br><i>so, I'll use their image.</i></h5>
+      <img
+        class="image"
+        src="https://apellawealth.com/hubfs/Nolan%20website.png"
+        alt="Nolan website"
+        loading="lazy"
+        style="width: 300px"
+      />
+      <div class="container">
+        <h5>
+          <i
+            >My previous employer still hasn't removed my image and info from
+            their website;</i
+          >
+          <br /><i>so, I'll use their image.</i>
+        </h5>
+      </div>
     </div>
+    <div class="sub-heading">
+      Currently, I'm coding in CSS, HTML, Javascript, and I have a desire to
+      learn Node.js, Python, and React. I'm seeking junior opportunities, full
+      stack or front-end, to learn and grow. <br />
+      My background is in finance and economics, specifically defined
+      contribution investments; however, I am passionate about problem solving
+      through creativity, design, and research.
     </div>
-
-
-
-    <div class="sub-heading">Currently, I'm coding in CSS, HTML, Javascript, and I have a desire to learn Node.js, Python, and React. I'm seeking junior opportunities, full stack or front-end, to learn and grow.
-      <br> My background is in finance and economics, specifically defined contribution investments; however, I am passionate about problem solving through creativity, design, and research.</div> 
-    <div class = "heading"> 
-      <h1><u><b>Projects</u></b></h1>
-    </div>
-    <div id="txt"></div>
-    <div class = "list sub-heading">
-        <a href = "trackconversion.html">Track conversion calculator</a>
-        <a href = "/card_game/card.html">Memory game</a>
-    </div>
-    
-
-  <script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-      setTimeout(startTime, 1000);
-    }
-
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-  </script>
-
-  </body
+  </body>
 </html>
