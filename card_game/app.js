@@ -479,7 +479,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cardsChosenId = [];
     }
     if (cardsChosen.length === 2) {
-      setTimeout(checkForMatch, 100);
+      setTimeout(checkForMatch, 250);
     }
   }
 });
