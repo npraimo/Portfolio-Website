@@ -4,7 +4,7 @@ html {
   text-align: center;
   font-size: 10px;
   background-color: black;
-  color: rgba(0, 255, 255, 0.856);
+  color: rgba(255, 255, 0, 0.842);
 }
 
 body {
@@ -22,7 +22,7 @@ nav {
   padding: 1.5rem;
   text-shadow: 1px;
   border: 5px dotted rgba(0, 255, 255, 0.856);
-  color: rgba(0, 255, 255, 0.856);
+  color: rgba(255, 255, 0, 0.842);
 }
 
 h1 {
@@ -38,7 +38,7 @@ h5 {
   justify-content: center;
   align-items: center;
   display: flexbox;
-  color: rgba(0, 255, 255, 0.856);
+  color: rgba(255, 255, 0, 0.842);
   text-decoration: underline;
 }
 
@@ -46,7 +46,7 @@ h5 {
   justify-content: spread;
   display: flexbox;
   text-align: center;
-  color: rgba(0, 255, 255, 0.856);
+  color: rgba(255, 255, 0, 0.842);
   font-size: 2rem;
   align-items: center;
 }
@@ -61,11 +61,11 @@ h5 {
 }
 
 a {
-  color: rgba(0, 255, 255, 0.856);
+  color: rgba(255, 255, 0, 0.842);
 }
 
 a:visited {
-  color: rgba(255, 255, 0, 0.842);
+  color: rgba(0, 255, 255, 0.836);
   background-color: transparent;
   text-decoration: none;
 }
@@ -84,7 +84,7 @@ a:active {
 
 textarea,
 #track-event {
-  background-color: rgba(187, 194, 233, 0.932);
+  background-color: rgba(0, 255, 255, 0.836);
   text-align: center;
 }
 
