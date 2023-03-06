@@ -1,18 +1,18 @@
 html {
   background-size: cover;
-  font-family: "helvetica neue";
+  font-family: Sans-Serif;
   text-align: center;
   font-size: 10px;
   background-color: black;
-  color: rgba(255, 255, 0, 0.842);
+  color: lightsteelblue;
 }
 
 body {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   display: flexbox;
-  min-height: 100vh;
-  align-items: center;
+  /*min-height: 50vh;*/
+  position: relative;
 }
 
 nav {
@@ -21,13 +21,18 @@ nav {
   font-size: 2.5rem;
   padding: 1.5rem;
   text-shadow: 1px;
-  border: 5px dotted rgba(0, 255, 255, 0.856);
-  color: rgba(255, 255, 0, 0.842);
+  border: 5px dotted yellow;
+  color: lightsteelblue;
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-size: 4rem;
   text-decoration: underline;
+  color: lightsteelblue;
+}
+
+image {
+  border: 5px dotted yellow;
 }
 
 h5 {
@@ -38,17 +43,29 @@ h5 {
   justify-content: center;
   align-items: center;
   display: flexbox;
-  color: rgba(255, 255, 0, 0.842);
+  color: lightsteelblue;
   text-decoration: underline;
 }
 
 .sub-heading {
   justify-content: spread;
   display: flexbox;
-  text-align: center;
-  color: rgba(255, 255, 0, 0.842);
+  text-align: justify;
+  color: lightsteelblue;
   font-size: 2rem;
-  align-items: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-links {
+  display: flexbox;
+  text-align: center;
+  color: lightsteelblue;
+  font-size: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #txt {
@@ -61,11 +78,11 @@ h5 {
 }
 
 a {
-  color: rgba(255, 255, 0, 0.842);
+  color: lightsteelblue;
 }
 
 a:visited {
-  color: rgba(0, 255, 255, 0.836);
+  color: lightsteelblue;
   background-color: transparent;
   text-decoration: none;
 }
@@ -84,7 +101,7 @@ a:active {
 
 textarea,
 #track-event {
-  background-color: rgba(0, 255, 255, 0.836);
+  background-color: lightsteelblue;
   text-align: center;
 }
 
@@ -93,6 +110,9 @@ fieldset {
 }
 
 .logo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   width: 20%;
-  height: 20%;
+  border: 5px solid yellow;
 }
