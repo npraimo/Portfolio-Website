@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-size: 1.5rem;
   display: flexbox;
-  /*min-height: 50vh;*/
+  min-height: 50vh;
   position: relative;
 }
 
@@ -21,7 +21,7 @@ nav {
   font-size: 2.5rem;
   padding: 1.5rem;
   text-shadow: 1px;
-  border: 5px dotted yellow;
+  border: 2px solid yellow;
   color: lightsteelblue;
 }
 
@@ -31,8 +31,9 @@ h1 {
   color: lightsteelblue;
 }
 
-image {
-  border: 5px dotted yellow;
+img {
+  border: 2px solid yellow;
+  max-width: 650px;
 }
 
 h5 {
@@ -53,7 +54,7 @@ h5 {
   text-align: justify;
   color: lightsteelblue;
   font-size: 2rem;
-  max-width: 25vw;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
