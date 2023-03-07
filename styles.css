@@ -70,12 +70,8 @@ h5 {
 }
 
 #txt {
-  color: rgba;
+  color: lightsteelblue;
   font-size: 3rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.5rem 1rem 0 0;
 }
 
 a {
