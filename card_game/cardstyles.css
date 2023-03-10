@@ -4,7 +4,7 @@ html {
   text-align: center;
   font-size: 10px;
   background-color: black;
-  color: darkgray;
+  color: light;
 }
 
 .grid {
@@ -23,7 +23,7 @@ img {
 }
 
 h3 {
-  color: antiquewhite;
+  color: lightsteelblue;
 }
 
 nav {
