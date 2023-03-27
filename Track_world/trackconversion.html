@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nolan Raimo Portfolio</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contactInfo.html">Contact</a>
+      </nav>
+    </div>
+    <h1>Track and Field Conversion</h1>
+
+    <label for="track-event">
+      Choose an event:
+      <br />
+      <select name="track-event" id="track-event">
+        <option id="55" value="55">55m</option>
+        <option id="300" value="300">300m</option>
+        <option id="600" value="600">600m</option>
+        <option id="1000" value="1000">1,000m</option>
+      </select>
+    </label>
+    <br />
+    <br />
+
+    <form id="timeEntry" onsubmit="return false;">
+      <label for="timeEntry">
+        <textarea
+          id="track-time"
+          placeholder="What time would you like to convert?"
+          type="number"
+        ></textarea>
+        <br />
+        <input type="submit" id="submit" style="display: none"></input>
+      </label>
+    </form>
+
+    <div name="result">
+      <p></p>
+    </div>
+  </body>
+  <script>
+
+//     function selectElement(id, valueToSelect) {    
+//     let element = document.getElementById(id);
+//     element.value = valueToSelect;
+// }
+
+// selectElement('xx', '11'); (https://stackoverflow.com/questions/78932/how-do-i-programmatically-set-the-value-of-a-select-box-element-using-javascript)
+
+
+
+    let convertedTime = 0;
+    const submitButton = document.getElementById("submit");
+    submitButton.addEventListener("click", convertTime);
+    
+
+    function convertTime() {
+      const trackTimeConvert = document.getElementById("track-time").value;
+      convertedTime = trackTimeConvert * 1.075;
+      console.log(convertedTime)
+      console.log(TrackEvent)
+      
+    }
+  </script>
+</html>

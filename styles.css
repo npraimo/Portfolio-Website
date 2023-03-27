@@ -115,11 +115,6 @@ textarea,
   background-color: lightsteelblue;
   text-align: center;
 }
-
-fieldset {
-  border: 0;
-}
-
 .logo {
   display: flex;
   margin-left: auto;
