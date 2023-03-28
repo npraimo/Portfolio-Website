@@ -1,83 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nolan Raimo Portfolio</title>
-    <link href="trackstyles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="nav-bar">
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../contactInfo.html">Contact</a>
-      </nav>
-    </div>
-    <h1>Track and Field Conversion</h1>
 
-    <label for="track-event">
-      Choose an event:
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nolan Raimo Portfolio</title>
+  <link href="trackstyles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="nav-bar">
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../contactInfo.html">Contact</a>
+    </nav>
+  </div>
+  <h1>Track and Field Conversion</h1>
+
+  <label for="track-event">
+    Choose an event:
+    <br />
+    <select name="track-event" id="track-event">
+      <option value="1.07">55m to 60m</option>
+      <option value="1.0766">55mh to 60mh</option>
+      <option value="0.625">300m to 200m</option>
+      <option value="1.3964">300m to 400m</option>
+      <option value="1.38">600m to 800m</option>
+      <option value=".7575">1,000m to 800m</option>
+      <option value="1.6749">1,000m to Mile</option>
+      <option value="2.15">Mile to Two Mile</option>
+    </select>
+  </label>
+  <br />
+  <br />
+
+  <form id="timeEntry" onsubmit="return false;">
+    <label for="timeEntry">
+      <textarea id="track-time" placeholder="What time would you like to convert?" type="number"></textarea>
       <br />
-      <select name="track-event" id="track-event">
-        <option value="1.07">55m to 60m</option>
-        <option value="1.0766">55mh to 60mh</option>
-        <option value="0.625">300m to 200m</option>
-        <option value="1.3964">300m to 400m</option>
-        <option value="1.38">600m to 800m</option>
-        <option value=".7575">1,000m to 800m</option>
-        <option value="1.6749">1,000m to Mile</option>
-        <option value="2.15">Mile to Two Mile</option>
-      </select>
+      <input type="submit" id="submit"></input>
     </label>
-    <br />
-    <br />
+  </form>
 
-    <form id="timeEntry" onsubmit="return false;">
-      <label for="timeEntry">
-        <textarea
-          id="track-time"
-          placeholder="What time would you like to convert?"
-          type="number"
-        ></textarea>
-        <br />
-        <input type="submit" id="submit"></input>
-      </label>
-    </form>
+  <div>
+    <p>The converted time is: <span id="result"></span></p>
+  </div>
+</body>
+<script>
 
-    <div>
-      <p>The converted time is: <span id="result"></span></p>
-    </div>
-  </body>
-  <script>
-
-    let sixty=1.07, sixtyHurdle=1.0766, twoHundredMeter=1.60,fourHundredMeter=1.3964, sixToEightHundred=1.38, thousandToEightHundred=.7575, thousandToMile=1.6749, mileToTwoMile=2.15;
+  // Scrap variables for conversion let sixty=1.07, sixtyHurdle=1.0766, twoHundredMeter=1.60,fourHundredMeter=1.3964, sixToEightHundred=1.38, thousandToEightHundred=.7575, thousandToMile=1.6749, mileToTwoMile=2.15;
 
 
+  // result
+  let convertedTime = 0;
 
-    let convertedTime = 0;
-    const submitButton = document.getElementById("submit");
-    const eventOption = document.getElementById("track-event");
+  // capturing the submit button and drop-down menu (track-event) 
+  const submitButton = document.getElementById("submit");
+  const eventOption = document.getElementById("track-event");
 
-    submitButton.addEventListener("click", convertTime);
-    
+  // add event listener to convert the time when submit clicked
+  submitButton.addEventListener("click", convertTime);
 
-    function convertTime() {
-      const trackTimeConvert = document.getElementById("track-time").value;
-      convertedTime = trackTimeConvert * eventOption.value;
-      convertedTime = convertedTime.toFixed(2);
-      document.getElementById('result').innerHTML = convertedTime;
+  // function for when submit button clicked.
+  function convertTime() {
+    let trackTimeConvert = document.getElementById("track-time").value;
+
+    if (trackTimeConvert.includes(":")) {
+      trackTimeConvert = trackTimeConvert.split(":");
+      trackTimeConvert[0] = trackTimeConvert[0] * 60;
+      trackTimeConvert[1] = trackTimeConvert[1] * 1;
+      trackTimeConvert = trackTimeConvert.reduce((a, b) => a + b);
+    };
+
+    convertedTime = trackTimeConvert * eventOption.value;
+    if (convertedTime > 60) {
+      let minute = Math.floor(convertedTime / 60)
+      let second = (convertedTime % 60).toFixed(2);
+      second = checkTime(second)
+      document.getElementById('result').innerHTML = minute + ":" + second;
+      console.log(minute, second);
+    } else {
+      document.getElementById('result').innerHTML = convertedTime.toFixed(2);
     }
 
+    // add zero in front of numbers < 10
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+  }
+</script>
 
-
-
-
-//     function selectElement(id, valueToSelect) {    
-//     let element = document.getElementById(id);
-//     element.value = valueToSelect;
-// }
-
-// selectElement('xx', '11'); (https://stackoverflow.com/questions/78932/how-do-i-programmatically-set-the-value-of-a-select-box-element-using-javascript)
-  </script>
 </html>
