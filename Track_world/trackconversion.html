@@ -20,10 +20,14 @@
       Choose an event:
       <br />
       <select name="track-event" id="track-event">
-        <option id="55" value="55">55m to 60m</option>
-        <option id="300" value="300">300m to 400m</option>
-        <option id="600" value="600">600m to 800m</option>
-        <option id="1000" value="1000">1,000m to 800m</option>
+        <option value="1.07">55m to 60m</option>
+        <option value="1.0766">55mh to 60mh</option>
+        <option value="0.625">300m to 200m</option>
+        <option value="1.3964">300m to 400m</option>
+        <option value="1.38">600m to 800m</option>
+        <option value=".7575">1,000m to 800m</option>
+        <option value="1.6749">1,000m to Mile</option>
+        <option value="2.15">Mile to Two Mile</option>
       </select>
     </label>
     <br />
@@ -46,16 +50,22 @@
     </div>
   </body>
   <script>
+
+    let sixty=1.07, sixtyHurdle=1.0766, twoHundredMeter=1.60,fourHundredMeter=1.3964, sixToEightHundred=1.38, thousandToEightHundred=.7575, thousandToMile=1.6749, mileToTwoMile=2.15;
+
+
+
     let convertedTime = 0;
     const submitButton = document.getElementById("submit");
+    const eventOption = document.getElementById("track-event");
+
     submitButton.addEventListener("click", convertTime);
     
 
     function convertTime() {
       const trackTimeConvert = document.getElementById("track-time").value;
-      convertedTime = trackTimeConvert * 1.075;
+      convertedTime = trackTimeConvert * eventOption.value;
       convertedTime = convertedTime.toFixed(2);
-      console.log(convertedTime)
       document.getElementById('result').innerHTML = convertedTime;
     }
 
