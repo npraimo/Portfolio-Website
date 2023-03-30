@@ -11,6 +11,33 @@
 
 <body>
   <h4>Under construction</h4>
+
+  <form id="timeEntry" onsubmit="return false;">
+    <label for="timeEntry">
+      <textarea id="steps" placeholder="Steps per day in the shoes (estimate)" type="number"></textarea>
+      <br />
+      <input type="submit" id="submit"></input>
+    </label>
+  </form>
+
+  <h3 id="stepTotal"></h3>
+
 </body>
+
+<script>
+  let result = 0
+
+  const submitButton = document.getElementById("submit");
+
+  submitButton.addEventListener("click", convertShoe);
+
+  function convertShoe() {
+    const steps = document.getElementById("steps").value
+    result = 1000000 / steps;
+    document.getElementById('stepTotal').innerHTML = result;
+    console.log(steps);
+  }
+
+</script>
 
 </html>
