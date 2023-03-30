@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="trackEvent">
+        Choose an event:
+        <br />
+        <select id="trackEvent">
+            <option value="800">800m</option>
+            <option value="1600">Mile</option>
+            <option value="3200">Two Mile</option>
+        </select>
+    </label>
+    <br />
+    <br />
+
+    <!-- default buttons for stopwatch -->
+    <button type="button" id="startButton">Start</button>
+    <button type="button" id="stopButton">Stop</button>
+    <button type="button" id="lapButton">Lap</button>
+    <br />
+    <br />
+
+    <!-- Active running splits, hit button to see projected pace -->
+    <h2>Splits</h2>
+    <button type="button" id="twoSplit">200m</button>
+    <button type="button" id="fourSplit">400m</button>
+    <button type="button" id="eightSplit">800m</button>
+    <button type="button" id="twelveSplit">1,200m</button>
+    <button type="button" id="mileSplit">Mile</button>
+
+    <!-- Output -->
+    <h4>You are on pace to run <span class="splitEvent"></span> in <span id="expectedSplit"></span></h4>
+    <br />
+    <br />
+    <br />
+
+    <!-- Looking for target paces for a certain race... enter into text box, then hit distance you want to get a pace for -->
+    <h2>Pace</h2>
+    <form id="timeEntry" onsubmit="return false;">
+        <label for="timeEntry">
+            <textarea id="desiredTime" placeholder="What time would you like to run?" type="number"></textarea>
+            <br />
+        </label>
+    </form>
+    <br />
+    <button type="button" id="twoPace">200m</button>
+    <button type="button" id="fourPace">400m</button>
+    <button type="button" id="eightPace">800m</button>
+    <button type="button" id="twelvePace">1,200m</button>
+    <button type="button" id="milePace">Mile</button>
+
+    <!-- Output -->
+    <h4>You should run <span name="paceEvent"></span> in <span id="expectedSplit"></span></h4>
+</body>
+
+
+
+<script>
+    const submitButton = document.getElementById("");
+    const eventOption = document.getElementById("trackEvent");
+    const paceEvent = document.getElementById("paceEvent");
+    const splitEvent = document.getElementById("splitEvent");
+    const desiredTime = document.getElementById("desiredTime").value;
+
+    console.log(desiredTime);
+
+
+
+    // document.getElementById("expectedSplit").innerHTML = h + ":" + m + ":" + s;
+    document.getElementById("expectedSplit").innerHTML = eventOption.value + "m";
+
+
+    // setting minutes and seconds for output
+    let minute = Math.floor(convertedTime / 60)
+    let second = (convertedTime % 60).toFixed(2);
+    second = checkTime(second);
+
+    // add zero in front of numbers < 10
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+</script>
+
+</html>
