@@ -13,7 +13,7 @@ h1 {
 }
 
 img {
-  border: 2px yellow solid;
+  /* border: 2px yellow solid; */
 }
 
 .container {
@@ -62,5 +62,5 @@ a:active {
 }
 
 .homeLinks {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
