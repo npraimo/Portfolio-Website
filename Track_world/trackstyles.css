@@ -12,9 +12,9 @@ h1 {
   text-decoration: underline;
 }
 
-img {
-  /* border: 2px yellow solid; */
-}
+/* img {
+   border: 2px yellow solid; 
+} */
 
 .container {
   display: flexbox;
