@@ -7,6 +7,15 @@ html {
   color: lightsteelblue;
 }
 
+h1 {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+img {
+  border: 2px yellow solid;
+}
+
 .container {
   display: flexbox;
   align-items: center;
@@ -50,4 +59,8 @@ a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.homeLinks {
+  font-size: 2rem;
 }
