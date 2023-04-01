@@ -7,23 +7,22 @@
 }
 
 html {
-  background-size: cover;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vh;
   font-family: Sans-Serif;
   text-align: center;
   font-size: 10px;
-  background-color: var(--base-color1);
+  background-color: var(--base-color2);
   color: var(--base-color2);
 }
 
 h1 {
   font-style: italic;
   text-decoration: underline;
-}
-
-.container {
-  display: flexbox;
-  align-items: center;
-  justify-content: center;
+  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
+    0 0 2px var(--base-color2);
 }
 
 nav {
@@ -31,11 +30,12 @@ nav {
   justify-content: space-between;
   font-size: 2.5rem;
   padding: 1.5rem;
-  text-shadow: 1px;
-  color: lightsteelblue;
+  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
+    0 0 2px var(--base-color2);
 }
 
 body {
+  background-color: var(--base-color1);
   margin: 0;
   font-size: 1.5rem;
   display: flexbox;
@@ -44,18 +44,20 @@ body {
 }
 
 a {
+  text-decoration: italics;
+
   color: yellow;
+  outline: black;
 }
 
 a:visited {
+  text-decoration: italics;
   color: yellow;
-  background-color: transparent;
-  text-decoration: none;
+  outline: black;
 }
 
 a:hover {
-  color: red;
-  background-color: transparent;
+  color: var(--base-color1);
   text-decoration: underline;
 }
 
@@ -67,4 +69,8 @@ a:active {
 
 .homeLinks {
   font-size: 2.5rem;
+  background-color: var(--base-color4);
+  padding: 5px;
+  border-radius: 10px;
+  border-style: groove;
 }

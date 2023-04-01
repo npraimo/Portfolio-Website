@@ -8,8 +8,8 @@
 
 html {
   padding-top: 2vh;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   padding-bottom: 2vh;
   font-family: Sans-Serif;
   text-align: center;
@@ -37,7 +37,6 @@ body {
   font-size: 1.75rem;
   display: flexbox;
   min-height: 50vh;
-
   align-items: center;
 }
 
@@ -46,13 +45,13 @@ nav {
   justify-content: space-between;
   font-size: 2.5rem;
   padding: 1.5rem;
-  text-shadow: 1px;
+  text-shadow: 5px 1px 2px var(--base-color1), 0 0 1em var(--base-color3),
+    0 0 2px var(--base-color2);
   color: yellow;
 }
 
 h1 {
   font-size: 2.5rem;
-  color: var(--base-color2);
   margin-top: 5px;
 }
 
@@ -117,14 +116,11 @@ a:active {
   text-decoration: underline;
 }
 
-textarea,
-#track-event {
-  background-color: var(--base-color2);
-  text-align: center;
-}
 .logo {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
+  display: flexbox;
+  margin: auto;
+  width: 25%;
+  border: 2px #e08b75 solid;
+  border-style: groove;
+  align-items: center;
 }
