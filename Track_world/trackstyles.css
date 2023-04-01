@@ -18,11 +18,13 @@ html {
   color: var(--base-color2);
 }
 
-h1 {
-  font-style: italic;
-  text-decoration: underline;
-  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
-    0 0 2px var(--base-color2);
+body {
+  background-color: var(--base-color1);
+  margin: 0;
+  font-size: 1.5rem;
+  background-size: cover;
+  position: center;
+  width: auto;
 }
 
 nav {
@@ -34,13 +36,11 @@ nav {
     0 0 2px var(--base-color2);
 }
 
-body {
-  background-color: var(--base-color1);
-  margin: 0;
-  font-size: 1.5rem;
-  background-size: cover;
-  position: center;
-  width: auto;
+h1 {
+  font-style: italic;
+  text-decoration: underline;
+  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
+    0 0 2px var(--base-color2);
 }
 
 a {
@@ -68,7 +68,7 @@ a:active {
 
 .homeLinks {
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
     0 0 2px var(--base-color2);
 }
