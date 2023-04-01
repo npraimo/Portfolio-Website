@@ -67,10 +67,8 @@ a:active {
 }
 
 .homeLinks {
+  display: inline-block;
   font-size: 2.5rem;
-  background: transparent;
-  padding: 5px;
-  border-radius: 10px;
-  border-style: groove;
-  border-style: ridge;
+  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
+    0 0 2px var(--base-color2);
 }
