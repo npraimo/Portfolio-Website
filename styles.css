@@ -52,7 +52,9 @@ nav {
 
 h1 {
   font-size: 2.5rem;
-  margin-top: 5px;
+  margin-top: 2px;
+  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
+    0 0 2px var(--base-color2);
 }
 
 img {
@@ -67,15 +69,14 @@ img {
 }
 
 .sub-heading {
-  padding: 20px;
+  padding: 1vw;
   justify-content: spread;
   display: flexbox;
-  text-align: justify;
+  text-align: center;
   color: var(--base-color2);
   font-size: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10vw;
+  margin-right: 10vw;
   background-color: var(--base-color1);
 }
 
@@ -119,7 +120,7 @@ a:active {
 .logo {
   display: flexbox;
   margin: auto;
-  width: 25%;
+  width: 20%;
   border: 2px #e08b75 solid;
   border-style: groove;
   align-items: center;
