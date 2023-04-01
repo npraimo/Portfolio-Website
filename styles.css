@@ -1,5 +1,5 @@
 :root {
-  --base-color1: #81b00b;
+  --base-color1: #f3ff4ade;
   --base-color2: #ecf2f1;
   --base-color3: #e08b75;
   --base-color4: rgb(36, 100, 160);
@@ -11,39 +11,37 @@ html {
   padding-left: 2vw;
   padding-right: 2vw;
   padding-bottom: 2vh;
+  font-size: 16px;
   font-family: Sans-Serif;
   text-align: center;
   align-items: center;
-  font-size: 10px;
   background-color: var(--base-color2);
 }
 
 body {
   background-color: var(--base-color4);
-  font-size: 1.5rem;
   display: flexbox;
-  min-height: 70vh;
+
   align-items: center;
 }
 
 nav {
-  display: inline-block;
-  justify-content: space-between;
-  font-size: 3rem;
+  color: var(--base-color2);
+  display: flexbox;
+  font-size: 2rem;
   padding: 1.5rem;
-  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
-    0 0 2px var(--base-color2);
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 2px;
   text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
     0 0 2px var(--base-color2);
 }
 
-img {
-  max-width: 20vw;
+#nolanPhoto {
+  padding-left: 2vw;
+  max-width: 30vw;
 }
 
 .heading {
@@ -54,15 +52,15 @@ img {
 }
 
 .sub-heading {
-  padding: 1vw;
-  justify-content: spread;
-  display: flexbox;
+  margin-bottom: 5vw;
   text-align: center;
   color: var(--base-color2);
   font-size: 2rem;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  background-color: var(--base-color1);
+  background-color: var(--base-color3);
+}
+
+.homeLinks {
+  font-size: 1.5rem;
 }
 
 #txt {
@@ -104,7 +102,7 @@ a:active {
   display: flexbox;
   margin: auto;
   width: 20%;
-  border: 2px #e08b75 solid;
+  border: 2px var(--base-color4) solid;
   border-style: groove;
   align-items: center;
 }

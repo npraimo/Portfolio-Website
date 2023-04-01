@@ -1,9 +1,17 @@
+:root {
+  --base-color1: #f3ff4ade;
+  --base-color2: #ecf2f1;
+  --base-color3: #e08b75;
+  --base-color4: rgb(36, 100, 160);
+  --base-color5: #627099;
+}
+
 html {
   background-size: cover;
   font-family: Sans-Serif;
   text-align: center;
   font-size: 10px;
-  background-color: black;
+  background-color: rgb(36, 100, 160);
   color: light;
 }
 
@@ -36,17 +44,19 @@ nav {
 }
 
 a {
-  color: yellow;
+  color: var(--base-color1);
 }
 
 a:visited {
-  color: yellow;
+  color: var(--base-color1);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: var(--base-color2);
+  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
+    0 0 2px var(--base-color2);
   background-color: transparent;
   text-decoration: underline;
 }
