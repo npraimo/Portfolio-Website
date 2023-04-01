@@ -10,6 +10,11 @@
 </head>
 
 <body>
+  <div class="nav-bar">
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
   <h4>Under construction</h4>
 
   <form id="timeEntry" onsubmit="return false;">
@@ -21,6 +26,8 @@
   </form>
 
   <h3 id="stepTotal"></h3>
+  <br />
+  <br />
 
 </body>
 
@@ -32,9 +39,11 @@
   submitButton.addEventListener("click", convertShoe);
 
   function convertShoe() {
-    const steps = document.getElementById("steps").value
+    let steps = document.getElementById("steps").value;
+    steps = steps.replace(/\,/g, '');
+    console.log(steps);
     result = 1000000 / steps;
-    document.getElementById('stepTotal').innerHTML = result + "days";
+    document.getElementById('stepTotal').innerHTML = result + "  days";
     console.log(steps);
   }
 

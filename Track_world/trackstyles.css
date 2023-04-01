@@ -38,14 +38,13 @@ body {
   background-color: var(--base-color1);
   margin: 0;
   font-size: 1.5rem;
-  display: flexbox;
-  min-height: 50vh;
-  position: relative;
+  background-size: cover;
+  position: center;
+  width: auto;
 }
 
 a {
   text-decoration: italics;
-
   color: yellow;
   outline: black;
 }
@@ -57,7 +56,7 @@ a:visited {
 }
 
 a:hover {
-  color: var(--base-color1);
+  color: var(--base-color2);
   text-decoration: underline;
 }
 
@@ -69,8 +68,9 @@ a:active {
 
 .homeLinks {
   font-size: 2.5rem;
-  background-color: var(--base-color4);
+  background: transparent;
   padding: 5px;
   border-radius: 10px;
   border-style: groove;
+  border-style: ridge;
 }
