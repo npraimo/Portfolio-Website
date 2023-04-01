@@ -1,10 +1,20 @@
+:root {
+  --base-color1: #943f2b;
+  --base-color2: #ecf2f1;
+  --base-color3: #e08b75;
+  --base-color4: #3639e0;
+  --base-color5: #627099;
+}
+
 html {
-  background-size: cover;
+  padding-top: 2vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 2vh;
   font-family: Sans-Serif;
   text-align: center;
   font-size: 11.5px;
-  background-color: black;
-  color: lightsteelblue;
+  background-color: var(--base-color2);
 }
 
 /* @media screen and (min-width: 768px) {
@@ -22,11 +32,13 @@ html {
 } */
 
 body {
+  background-color: var(--base-color4);
   margin: 0;
   font-size: 1.75rem;
   display: flexbox;
   min-height: 50vh;
-  position: relative;
+
+  align-items: center;
 }
 
 nav {
@@ -39,42 +51,39 @@ nav {
 }
 
 h1 {
-  font-size: 4rem;
-  text-decoration: underline;
-  color: lightsteelblue;
+  font-size: 2.5rem;
+  color: var(--base-color2);
+  margin-top: 5px;
 }
 
 img {
-  max-width: 650px;
-}
-
-h5 {
-  font-size: 1rem;
+  max-width: 20vw;
 }
 
 .heading {
   justify-content: center;
   align-items: center;
   display: flexbox;
-  color: lightsteelblue;
-  text-decoration: underline;
+  color: var(--base-color2);
 }
 
 .sub-heading {
+  padding: 20px;
   justify-content: spread;
   display: flexbox;
   text-align: justify;
-  color: lightsteelblue;
+  color: var(--base-color2);
   font-size: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--base-color1);
 }
 
 .project-links {
   display: flexbox;
   text-align: center;
-  color: lightsteelblue;
+  color: var(--base-color2);
   font-size: 2rem;
   max-width: 400px;
   margin-left: auto;
@@ -82,12 +91,12 @@ h5 {
 }
 
 #txt {
-  color: lightsteelblue;
+  color: var(--base-color2);
   font-size: 3rem;
 }
 
 a {
-  color: yellow;
+  color: var(--base-color1);
 }
 
 a:visited {
@@ -110,7 +119,7 @@ a:active {
 
 textarea,
 #track-event {
-  background-color: lightsteelblue;
+  background-color: var(--base-color2);
   text-align: center;
 }
 .logo {

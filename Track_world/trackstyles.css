@@ -1,20 +1,24 @@
+:root {
+  --base-color1: #943f2b;
+  --base-color2: #ecf2f1;
+  --base-color3: #e08b75;
+  --base-color4: #3639e0;
+  --base-color5: #627099;
+}
+
 html {
   background-size: cover;
   font-family: Sans-Serif;
   text-align: center;
   font-size: 10px;
-  background: black;
-  color: lightsteelblue;
+  background-color: var(--base-color1);
+  color: var(--base-color2);
 }
 
 h1 {
   font-style: italic;
   text-decoration: underline;
 }
-
-/* img {
-   border: 2px yellow solid; 
-} */
 
 .container {
   display: flexbox;
