@@ -2,7 +2,7 @@
   --base-color1: #f3ff4ade;
   --base-color2: #ecf2f1;
   --base-color3: #e08b75;
-  --base-color4: rgb(36, 100, 160);
+  --base-color4: #2464a0;
   --base-color5: #627099;
 }
 
@@ -41,7 +41,7 @@ h1 {
 
 #nolanPhoto {
   padding-left: 2vw;
-  max-width: 30vw;
+  max-width: 20vw;
 }
 
 .heading {
