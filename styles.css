@@ -7,21 +7,15 @@
 }
 
 html {
-  padding-top: 2vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-bottom: 2vh;
   font-size: 16px;
   font-family: Sans-Serif;
   text-align: center;
   align-items: center;
-  background-color: var(--base-color2);
+  background-color: var(--base-color4);
 }
 
 body {
-  background-color: var(--base-color4);
   display: flexbox;
-
   align-items: center;
 }
 
@@ -52,11 +46,12 @@ h1 {
 }
 
 .sub-heading {
+  margin-left: 10vw;
+  margin-right: 10vw;
   margin-bottom: 5vw;
   text-align: center;
   color: var(--base-color2);
   font-size: 2rem;
-  background-color: var(--base-color3);
 }
 
 .homeLinks {
