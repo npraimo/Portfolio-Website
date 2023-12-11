@@ -2,7 +2,7 @@
   --base-color1: #f3ff4ade;
   --base-color2: #ecf2f1;
   --base-color3: #e08b75;
-  --base-color4: rgb(36, 100, 160);
+  --base-color4: #212529;
   --base-color5: #627099;
 }
 
@@ -11,8 +11,7 @@ html {
   font-family: Sans-Serif;
   text-align: center;
   font-size: 10px;
-  background-color: rgb(36, 100, 160);
-  color: light;
+  background-color: var(--base-color4);
 }
 
 .grid {

@@ -2,21 +2,21 @@
   --base-color1: #f3ff4ade;
   --base-color2: #ecf2f1;
   --base-color3: #e08b75;
-  --base-color4: #2464a0;
+  --base-color4: #212529;
   --base-color5: #627099;
 }
 
 html {
   font-size: 16px;
-  font-family: Sans-Serif;
-  text-align: center;
-  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+
   background-color: var(--base-color4);
 }
 
 body {
   display: flexbox;
   align-items: center;
+  text-align: center;
 }
 
 nav {
@@ -29,13 +29,12 @@ nav {
 h1 {
   font-size: 2rem;
   margin-top: 2px;
-  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
-    0 0 2px var(--base-color2);
+  text-shadow: 5px 1px 2px var(--base-color5);
 }
 
 #nolanPhoto {
-  padding-left: 2vw;
   max-width: 20vw;
+  border: var(--base-color1) 2px solid;
 }
 
 .heading {
@@ -49,13 +48,9 @@ h1 {
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 5vw;
-  text-align: center;
+  text-align: left;
   color: var(--base-color2);
   font-size: 2rem;
-}
-
-.homeLinks {
-  font-size: 1.5rem;
 }
 
 #txt {
@@ -65,8 +60,7 @@ h1 {
   text-align: center;
   color: var(--base-color2);
   font-size: 2rem;
-  text-shadow: 5px 1px 2px var(--base-color5), 0 0 1em var(--base-color3),
-    0 0 2px var(--base-color2);
+  text-shadow: 5px 1px 2px var(--base-color5);
 }
 
 a {
@@ -100,38 +94,4 @@ a:active {
   border: 2px var(--base-color4) solid;
   border-style: groove;
   align-items: center;
-}
-
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container,
-  .container-sm,
-  .container-md {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container,
-  .container-sm,
-  .container-md,
-  .container-lg {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container,
-  .container-sm,
-  .container-md,
-  .container-lg,
-  .container-xl {
-    max-width: 1140px;
-  }
 }
